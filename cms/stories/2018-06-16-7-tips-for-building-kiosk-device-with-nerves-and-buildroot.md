@@ -25,7 +25,7 @@ You can read more about this project here: https://nerves-project.org/
 
 Nerves is a neat tool, to help you wrap software you’ve written into the single firmware. You can burn it into sd card, pen drive or an SD drive. Single file firmware file is a big advantage. You can burn a few versions of firmware on a bunch of pen drives, and switch them easily.
 
-## What do we need to achieve?
+## What do we need to archive?
 
 We need a kiosk device with two screens. The displays should show us a web content served by local server (no internet connection). The backend stuff is written in elixir of course. All things are running on X86_64 with Radeon. Important thing is that we will need the full power of GPU.
 
