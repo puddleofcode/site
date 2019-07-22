@@ -25,6 +25,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
+        appName: `Puddle Of Code`,
+        appDescription: `Programming Adventures with Michał Kalbarczyk`,
         logo: "./src/images/favicon.png"
       }
     },
