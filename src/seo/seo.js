@@ -62,9 +62,11 @@ export default ({
           return (
             <>
               <Helmet title={seo.title} titleTemplate={titleTemplate}>
+                <meta name="author" content={seo.author} />
                 <meta name="description" content={seo.description} />
                 <meta name="image" content={seo.image} />
                 <link rel={`alternate`} hreflang={`en`} href={seo.url} />
+                <html lang="en" />
               </Helmet>
               <Facebook
                 url={seo.url}
