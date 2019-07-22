@@ -30,14 +30,15 @@ export const query = graphql`
         author_image {
           childImageSharp{
               fixed(width: 88) {
-                  ...GatsbyImageSharpFixed_noBase64
+                ...GatsbyImageSharpFixed_noBase64
               }
           }
         }
         image {
           childImageSharp{
               fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid_noBase64
+                src
+                ...GatsbyImageSharpFluid_noBase64
               }
           }
         }
@@ -59,7 +60,7 @@ export default ({ data, pageContext }) => (
       title={data.markdownRemark.frontmatter.title}
       keywords={data.markdownRemark.frontmatter.tags}
       description={data.markdownRemark.excerpt}
-      image={data.markdownRemark.frontmatter.image.url}
+      image={data.markdownRemark.frontmatter.image.childImageSharp.fluid.src}
       url={data.markdownRemark.fields.slug}
       date={data.markdownRemark.frontmatter.schemaDate}
     />

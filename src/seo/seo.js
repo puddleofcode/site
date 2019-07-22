@@ -14,10 +14,12 @@ export const query = graphql`
         titleTemplate
         defaultDescription: description
         siteUrl: url
-        defaultImage: image
         twitterUsername
         facebookAppID
       }
+    }
+    logo: file(relativePath: {eq: "logo.png"}) {
+      publicURL
     }
   }
 `
@@ -41,17 +43,19 @@ export default ({
               titleTemplate,
               defaultDescription,
               siteUrl,
-              defaultImage,
               twitterUsername,
               facebookAppID,
             },
           },
+          logo: {
+            publicURL
+          }
         }) => {
           const seo = {
             title: title || defaultTitle,
             author: author || defaultAuthor,
             description: description || defaultDescription,
-            image: `${siteUrl}${image || defaultImage}`,
+            image: `${siteUrl}${image || publicURL}`,
             url: `${siteUrl}${pathname || '/'}`,
           };
 
