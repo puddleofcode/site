@@ -1,0 +1,16 @@
+backend:
+  name: github
+  repo: fazibear/puddleofcode.com
+
+media_folder: cms/images
+public_folder: images
+collections:
+  - name: stories
+    label: stories
+    folder: cms/stories
+    create: true
+    fields:
+      - { name: slug, label: slug }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
