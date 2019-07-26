@@ -8,7 +8,7 @@ export default ({ title, slug }) => (
     <h3>{title}</h3>
     <form
       method="POST"
-      action="https://dev.staticman.net/v3/entry/github/fazibear/puddleofcode.com"
+      action="https://dev.staticman.net/v3/entry/github/fazibear/puddleofcode.com/master/comments"
     >
       <input
         name="options[slug]"
