@@ -66,7 +66,7 @@ const render = (data) => (
               <h2>Michał Kalbarczyk</h2>
               <h4>Software Engineer</h4>
               <p>
-                <Link className="web-link" to="mailto:michal.kalbarczyk@gmail.com"><FaEnvelope /></Link>
+                <Link className="web-link" to="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#x6d;&#x69;&#99;&#x68;&#x61;&#108;&#46;&#x6b;&#97;&#x6c;&#x62;&#x61;&#x72;&#x63;&#x7a;&#121;&#x6b;&#x40;&#103;&#109;&#x61;&#105;&#108;&#46;&#99;&#111;&#109;"><FaEnvelope /></Link>
                 <Link className="web-link" to="https://github.com/fazibear"><FaGithub /></Link>
                 <Link className="web-link" to="https://twitter.com/fazibear"><FaTwitter /></Link>
                 <Link className="web-link" to="https://linkedin.com/in/fazibear"><FaLinkedin /></Link>
