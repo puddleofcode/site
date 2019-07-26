@@ -103,8 +103,8 @@ export default ({ data, pageContext }) => (
           </div>
           <div className="article-post" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
           <hr />
-          // <CommentForm title="Add Comment" slug="dupa"/>
-          // <hr />
+          { /* <CommentForm title="Add Comment" slug="dupa"/> */ }
+          { /* <hr /> */ }
           <PrevNext navigation={pageContext.navigation} />
         </Col>
       </Row>
