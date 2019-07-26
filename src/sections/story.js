@@ -11,6 +11,7 @@ import SEO from '../seo/seo'
 import Tags from '../components/tags'
 import Share from '../components/share'
 import PrevNext from '../components/prevnext'
+import CommentForm from '../components/comment_form'
 
 export const query = graphql`
   query($slug: String!) {
@@ -101,6 +102,8 @@ export default ({ data, pageContext }) => (
             </h1>
           </div>
           <div className="article-post" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+          <hr />
+          <CommentForm title="Add Comment" slug="dupa"/>
           <hr />
           <PrevNext navigation={pageContext.navigation} />
         </Col>
