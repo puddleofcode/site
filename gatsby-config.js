@@ -23,6 +23,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `puddleofcode`
+      }
+    },
+    {
       resolve: `gatsby-plugin-favicon`,
       options: {
         appName: `Puddle Of Code`,
