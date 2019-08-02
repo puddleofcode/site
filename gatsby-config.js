@@ -4,7 +4,7 @@ module.exports = {
     author: `Michał Kalbarczyk`,
     titleTemplate: `%s · Puddle Of Code`,
     description: `Programming Adventures with Michał Kalbarczyk`,
-    url: `https://puddleofcode.netlify.com`,
+    url: `https://puddleofcode.com`,
     image: `./src/images/logo.png`,
     twitterUsername: `@fazibear`,
     facebookAppID: ``
