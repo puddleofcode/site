@@ -11,7 +11,7 @@ const { paginate } = require('gatsby-awesome-pagination');
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark` && node.frontmatter.section == `story`) {
-    const slug = `/${node.frontmatter.section}/${node.frontmatter.slug}.html`
+    const slug = `/${node.frontmatter.section}/${node.frontmatter.slug}`
     console.info("Generating slug:", slug)
     createNodeField({
       node,
