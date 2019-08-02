@@ -72,4 +72,5 @@ yarn-error.log
 ./static
 !./static/admin/config.yml
 
-functions
+functions/
+!src/functions/
