@@ -1,0 +1,16 @@
+[build]
+  base = "."
+  publish = "public/"
+  command = "gatsby build"
+
+[[redirects]]
+  from = "https://puddleofcode.netlify.com/*"
+  to = "https://puddleofcode.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/comments/*"
+  to = "https://puddleofcode-comments.netlify.com/:splat"
+  status = 200
+  force = true
