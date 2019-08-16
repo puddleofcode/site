@@ -1,2 +1,14 @@
 [build]
-  functions = "functions"
+  base = "."
+  publish = "public/"
+  command = "gatsby build"
+  functions = "functions/"
+
+[[redirects]]
+  from = "https://puddleofcode.netlify.com/*"
+  to = "https://puddleofcode.com/:splat"
+  status = 301
+  force = true
+
+
+
