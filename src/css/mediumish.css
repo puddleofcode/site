@@ -1021,3 +1021,9 @@ iframe {
   border-radius: 100%;
   margin: 5px;
 }
+
+@media screen and (min-width: 1500px) {
+  .container {
+      max-width: 80%;
+    }
+}
