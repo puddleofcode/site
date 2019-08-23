@@ -23,7 +23,7 @@ $ mix credo
 
 And get something like this:
 
-![credo](../images/storiess/credo.png)
+![credo](../images/stories/credo.png)
 
 Beautiful isn’t it ?
 
@@ -63,7 +63,7 @@ We need to generate GITHUB_ACCESS_TOKEN. Just go to your user Settings page and 
 
 After project builds, we get comments within a pull request.
 
-![credo](../images/storiess/credopr.png)
+![credo](../images/stories/credopr.png)
 
 One more thing… You can add rvm to cache to speed up things. Just add this lines to you .travis.yml
 
