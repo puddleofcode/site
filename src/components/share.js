@@ -2,6 +2,9 @@ import React from 'react'
 
 import { FaFacebook, FaTwitter, FaLinkedin, FaReddit } from 'react-icons/fa';
 import { graphql, StaticQuery } from 'gatsby'
+import { CommentCount } from 'gatsby-plugin-disqus'
+import { Link } from 'gatsby'
+import { navigate } from '@reach/router';
 
 import {
   FacebookShareButton,
@@ -59,6 +62,11 @@ var render = ({ title, url, tags }) => (
       </li>
     </ul>
     <div className="sep" />
+    <ul>
+      <li>
+        <CommentCount config={{url: url}} />
+      </li>
+    </ul>
   </div>
 )
 
