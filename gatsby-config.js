@@ -261,7 +261,7 @@ module.exports = {
                 edges {
                   node {
                     id
-                    excerpt(pruneLength: 140, format: PLAIN, truncate: false)
+                    excerpt(pruneLength: 100, format: PLAIN, truncate: false)
                     html
                     fields {
                       slug

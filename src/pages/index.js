@@ -21,7 +21,7 @@ export const query = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 140, format: HTML, truncate: false)
+          excerpt(pruneLength: 100, format: HTML, truncate: false)
           fields {
             slug
             readingTime {

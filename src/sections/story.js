@@ -19,7 +19,7 @@ export const query = graphql`
       fields: { slug: { eq: $slug } }
     ) {
       html
-      excerpt(pruneLength: 140, format: PLAIN, truncate: false)
+      excerpt(pruneLength: 100, format: PLAIN, truncate: false)
       frontmatter {
         section
         title
