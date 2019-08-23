@@ -6,6 +6,7 @@ tags:
   - elixir
   - compiler
   - contracts
+  - typos
 
 section: story
 image: ../images/titles/typo.jpg
