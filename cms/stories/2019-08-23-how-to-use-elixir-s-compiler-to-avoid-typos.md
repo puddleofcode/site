@@ -113,7 +113,7 @@ This module makes easier to listen to messages.
 
 Now you can send message like this:
 
-```elixie
+```elixir
 Dispatcher.message(%{name: "app_one_hello", payload: "some_kind_of_payload"}
 ```
 
