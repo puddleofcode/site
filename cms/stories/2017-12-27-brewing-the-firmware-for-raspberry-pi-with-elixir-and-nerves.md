@@ -1,7 +1,7 @@
 ---
 date: 2017-12-27
 slug: brewing-the-firmware-for-raspberry-pi-with-elixir-and-nerves
-title: Brewing the firmware for Raspberry PI with Elixir and Nerves
+title: Brewing the Firmware for Raspberry PI with Elixir and Nerves
 tags:
   - elixir
   - nerves
