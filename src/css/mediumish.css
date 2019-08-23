@@ -1027,3 +1027,8 @@ iframe {
       max-width: 80%;
     }
 }
+
+#disqus_thread {
+  width: 100% !important;
+  margin: 3em auto 0px auto !important;
+}
