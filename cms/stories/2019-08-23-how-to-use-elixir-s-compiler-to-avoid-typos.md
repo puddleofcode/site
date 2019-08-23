@@ -136,7 +136,7 @@ end
 
 ```
 
-It works fine, but you can easily type `app_twe_hello` instead of `app_two_hello`. Also when you have thousands of messages you need to search codebase for names.
+It works fine, but you can easily type `app_twe_hello` instead of `app_two_hello`. Also when you have thousands of messages you need to search the codebase for names. It might be difficult.
 
 Why not use the compiler to track such errors?
 
