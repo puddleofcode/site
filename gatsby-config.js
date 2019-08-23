@@ -11,6 +11,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `fazibear`
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [`UA-627863-17`],

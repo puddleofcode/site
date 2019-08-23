@@ -1,6 +1,6 @@
 ---
 date: 2008-12-08
-slug: using-mac-sudden-motion-sensor-with
+slug: using-mac-sudden-motion-sensor-with-ruby
 title: Using Mac Sudden Motion Sensor with RubyInline
 tags:
   - ruby
