@@ -27,10 +27,10 @@ export default ({
   title = null,
   description = null,
   image = null,
-  pathname = null,
   article = false,
   date = null,
   author = null,
+  url = null
 }) => (
     <StaticQuery
       query={query}
@@ -56,7 +56,7 @@ export default ({
             author: author || defaultAuthor,
             description: description || defaultDescription,
             image: `${siteUrl}${image || publicURL}`,
-            url: `${siteUrl}${pathname || '/'}`,
+            url: `${siteUrl}${url || '/'}`,
           };
 
           return (
