@@ -614,6 +614,7 @@ h6 {
   font-family: 'Fira Sans', -apple-system, system-ui, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
+
 .article-post .h1,
 .article-post .h2,
 .article-post .h3,
@@ -1031,4 +1032,13 @@ iframe {
 #disqus_thread {
   width: 100% !important;
   margin: 3em auto 0px auto !important;
+}
+
+.card-text h1,
+.card-text h2,
+.card-text h3,
+.card-text h4,
+.card-text h5,
+.card-text h6 {
+  font-size: 150%;
 }

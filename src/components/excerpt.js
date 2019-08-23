@@ -4,11 +4,11 @@ import Link from './link'
 
 export default ({url, title, excerpt}) => (
   <>
-    <Card.Title as="h2">
+    <Card.Title as="h3">
       <Link className="text-dark" to={url}>
         {title}
       </Link>
     </Card.Title>
-    <Card.Text as="h4" dangerouslySetInnerHTML={{__html: excerpt}}/>
+    <Card.Text as="div" dangerouslySetInnerHTML={{__html: excerpt}}/>
   </>
 )
