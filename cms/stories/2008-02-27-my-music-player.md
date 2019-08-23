@@ -17,4 +17,4 @@ Another application written in javasctipt, using [AppJet](http://appjet.com/) so
 
 <del>Want use it ? Go for it [here](http://mymusic.appjet.net/) or take a look at [source code](http://source.mymusic.appjet.net/)</del>.
 
-AppJet is down, there is a new version [here]({{ site.baseurl }}{% post_url 2009-11-13-my-player-20 %}).
+AppJet is down, there is a new version [here](/story/my-player-2-0).
