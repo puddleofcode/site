@@ -136,7 +136,7 @@ end
 
 ```
 
-It works fine, but if you have thousants of messages you can easly make a mistake. `app_twe_hello` instead of `app_two_hello` for example.
+It works fine, but you can easily type `app_twe_hello` instead of `app_two_hello`. Also when you have thousands of messages you need to search codebase for names.
 
 Why not use the compiler to track such errors?
 
@@ -296,5 +296,3 @@ Check out my github for example app:
 - [first version](https://github.com/fazibear/avoiding_typos/tree/master)
 
 - [with metaprogramming](https://github.com/fazibear/avoiding_typos/tree/with_meta)
-
-
