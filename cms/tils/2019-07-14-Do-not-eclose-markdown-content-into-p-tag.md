@@ -1,7 +1,8 @@
 ---
 section: til
 date: 2019-07-14
-title: Don't eclose markdown content into <p> tag
+slug: Do-not-eclose-markdown-content-into-p-tag
+title: Do not eclose markdown content into <p> tag
 author: Michał Kalbarczyk
 author_image: ../images/authors/michal.png
 ---

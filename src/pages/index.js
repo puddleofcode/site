@@ -96,6 +96,9 @@ export const query = graphql`
     ){
       edges {
         node {
+          fields {
+            slug
+          }
           id
           html
           frontmatter {
@@ -165,7 +168,7 @@ export default ({ data }) => (
     <section className="til-list">
       <Header title="Last Learned" link="More &raquo;" url="/tils" />
       {data.til.edges.map(({ node }) => (
-        <Til key={node.id} title={node.frontmatter.title} html={node.html} author={node.frontmatter.author} author_image={node.frontmatter.author_image} />
+        <Til key={node.id} title={node.frontmatter.title} html={node.html} author={node.frontmatter.author} author_image={node.frontmatter.author_image} url={node.fields.slug}/>
       ))}
     </section>
   </Layout>

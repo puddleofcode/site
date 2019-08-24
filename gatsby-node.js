@@ -10,7 +10,7 @@ const { paginate } = require('gatsby-awesome-pagination');
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
-  if (node.internal.type === `MarkdownRemark` && node.frontmatter.section == `story`) {
+  if (node.internal.type === `MarkdownRemark` && (node.frontmatter.section == `story` || node.frontmatter.section == `til`)) {
     const slug = `/${node.frontmatter.section}/${node.frontmatter.slug}`
     console.info("Generating slug:", slug)
     createNodeField({
@@ -31,6 +31,19 @@ exports.createPages = ({ graphql, actions }) => {
         itemsPerPage: 5,
         pathPrefix: `/tils`,
         component: path.resolve(`src/pagination/tils.js`),
+      })
+      edges.forEach(({ node }, index) => {
+        createPage({
+          path: node.fields.slug,
+          component: path.resolve(`src/sections/til.js`),
+          context: {
+            slug: node.fields.slug,
+            navigation: {
+              prev: index === 0 ? null : { title: edges[index - 1].node.frontmatter.title, slug: edges[index - 1].node.fields.slug },
+              next: index === edges.length - 1 ? null : { title: edges[index + 1].node.frontmatter.title, slug: edges[index + 1].node.fields.slug },
+            }
+          }
+        })
       })
     },
     'project': (edges) => {

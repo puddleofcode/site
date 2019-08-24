@@ -1,6 +1,7 @@
 ---
 section: til
 date: 2019-05-09
+slug: free-pubsub-in-elixir-phoenix-aplication
 title: Free PubSub in Elixir Phoenix Application
 author: Michał Kalbarczyk
 author_image: ../images/authors/michal.png

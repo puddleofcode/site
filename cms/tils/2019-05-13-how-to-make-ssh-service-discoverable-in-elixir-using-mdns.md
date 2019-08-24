@@ -1,6 +1,7 @@
 ---
 section: til
 date: 2019-05-13
+slug: how-to-make-ssh-service-discoverable-in-elixir-using-mdns
 title: How to make SSH service discoverable in Elixir using mDNS?
 author: Michał Kalbarczyk
 author_image: ../images/authors/michal.png

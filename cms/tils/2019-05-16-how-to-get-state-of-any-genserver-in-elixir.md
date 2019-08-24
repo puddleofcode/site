@@ -1,7 +1,8 @@
 ---
 section: til
 date: 2019-05-16
-title: How to get state of any GenServer in Elixir?
+slug: how-to-get-state-of-any-genserver-in-elixir
+title: How to Get State of Any GenServer in Elixir?
 author: Michał Kalbarczyk
 author_image: ../images/authors/michal.png
 ---
