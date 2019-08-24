@@ -66,7 +66,7 @@ export default ({
                 <meta name="description" content={seo.description} />
                 <meta name="image" content={seo.image} />
                 <link rel="canonical" href={seo.url} />
-                <link rel={`alternate`} hreflang={`en`} href={seo.url} />
+                <link rel="alternate" hreflang="en" href={seo.url} />
               </Helmet>
               <Facebook
                 url={seo.url}
