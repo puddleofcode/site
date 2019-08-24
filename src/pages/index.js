@@ -121,7 +121,7 @@ export default ({ data }) => (
     <SEO
       article={false}
       keywords={`programming adventures`}
-      title={`Puddle Of Code`}
+      title={`Programming Adventures with Michał Kalbarczyk`}
     />
     <Heading title="Programming Adventures" lead="with Michał Kalbarczyk" />
     <section className="recent-posts">
