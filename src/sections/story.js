@@ -96,7 +96,7 @@ export default ({ data, pageContext }) => (
                 <Tags tags={data.markdownRemark.frontmatter.tags} />
               </Col>
             </Row>
-            <Image fadeIn={false} className="featured-image img-fluid" fluid={data.markdownRemark.frontmatter.image.childImageSharp.fluid} title={data.markdownRemark.frontmatter.title} />
+            <Image className="featured-image img-fluid" fluid={data.markdownRemark.frontmatter.image.childImageSharp.fluid} title={data.markdownRemark.frontmatter.title} />
             <h1 className="posttitle">
               {data.markdownRemark.frontmatter.title}
             </h1>

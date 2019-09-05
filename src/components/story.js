@@ -14,7 +14,7 @@ export default ({ title, excerpt, author, date, url, image, author_image, tags, 
     <Card className="h-100">
       <div className="maxthumb">
         <Link to={url}>
-          <Image fadeIn={false} className="maxthumb-img" fluid={image.childImageSharp.fluid} />
+          <Image className="maxthumb-img" fluid={image.childImageSharp.fluid} />
         </Link>
       </div>
       <Card.Body>
