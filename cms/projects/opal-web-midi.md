@@ -2,12 +2,14 @@
 section: project
 date: 2015-11-17
 title: opal-web-midi
-url: https://github.com/fazibear/opal-web-midi
+slug: opal-web-midi
 image: ../images/projects/opalgem.png
 author: Michał Kalbarczyk
 author_image: ../images/authors/michal.png
 ---
 Web MIDI wrapper for Opal.
+
+Github: https://github.com/fazibear/opal-web-midi
 
 - ![](https://badge.fury.io/rb/opal-web-midi.svg)
 - ![](https://img.shields.io/github/stars/fazibear/opal-web-midi.svg)

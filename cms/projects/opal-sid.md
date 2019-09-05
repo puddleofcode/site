@@ -2,12 +2,14 @@
 section: project
 date: 2016-04-02
 title: opal-sid
-url: https://github.com/fazibear/opal-sid
+slug: opal-sid
 image: ../images/projects/opalgem.png
 author: Michał Kalbarczyk
 author_image: ../images/authors/michal.png
 ---
 Hermit's [jsSID](https://github.com/hermitsoft/jsSID) wrapper for opal.
+
+Github: https://github.com/fazibear/opal-sid
 
 - ![](https://badge.fury.io/rb/opal-sid.svg)
 - ![](https://img.shields.io/github/stars/fazibear/opal-sid.svg)

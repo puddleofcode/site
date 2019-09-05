@@ -18,6 +18,9 @@ export const query = graphql`
     ){
       edges {
         node {
+          fields {
+            slug
+          }
           id
           html
           frontmatter {
@@ -26,7 +29,6 @@ export const query = graphql`
             date(formatString: "DD MMMM YYYY")
             author
             tags
-            url
             author_image {
               childImageSharp{
                   fixed(width: 40) {
@@ -67,7 +69,7 @@ export default ({ data, pageContext }) => (
             excerpt={node.html}
             date={node.frontmatter.date}
             author_image={node.frontmatter.author_image}
-            url={node.frontmatter.url}
+            url={node.fields.slug}
             tags={node.frontmatter.tags}
             read={false}
           />

@@ -62,6 +62,7 @@ export const query = graphql`
           id
           html
           fields {
+            slug
             readingTime {
               text
             }
@@ -69,7 +70,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM YYYY")
-            url
+            tags
             author
             author_image {
               childImageSharp{
@@ -158,7 +159,7 @@ export default ({ data }) => (
             excerpt={node.html}
             date={node.frontmatter.date}
             author_image={node.frontmatter.author_image}
-            url={node.frontmatter.url}
+            url={node.fields.slug}
             tags={node.frontmatter.tags}
             read={false}
           />

@@ -2,12 +2,14 @@
 section: project
 date: 2015-06-24
 title: opal-virtual-dom
-url: https://github.com/fazibear/opal-virtual-dom
+slug: opal-virtual-dom
 image: ../images/projects/opalgem.png
 author: Michał Kalbarczyk
 author_image: ../images/authors/michal.png
 ---
 Opal wrapper for [virtual-dom](https://github.com/Matt-Esch/virtual-dom) javascript library. For more information see [virtual-dom wiki page](https://github.com/Matt-Esch/virtual-dom/wiki).
+
+Github: https://github.com/fazibear/opal-virtual-dom
 
 - ![](https://badge.fury.io/rb/opal-virtual-dom.svg)
 - ![](https://img.shields.io/github/stars/fazibear/opal-virtual-dom.svg)

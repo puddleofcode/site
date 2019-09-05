@@ -10,7 +10,7 @@ const { paginate } = require('gatsby-awesome-pagination');
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
-  if (node.internal.type === `MarkdownRemark` && (node.frontmatter.section == `story` || node.frontmatter.section == `til`)) {
+  if (node.internal.type === `MarkdownRemark` && (node.frontmatter.section == `story` || node.frontmatter.section == `til` || node.frontmatter.section == `project`)) {
     const slug = `/${node.frontmatter.section}/${node.frontmatter.slug}`
     console.info("Generating slug:", slug)
     createNodeField({

@@ -2,12 +2,14 @@
 section: project
 date: 2015-11-15
 title: opal-phoenix
-url: https://github.com/fazibear/opal-phoenix
+slug: opal-phoenix
 image: ../images/projects/opalgem.png
 author: Michał Kalbarczyk
 author_image: ../images/authors/michal.png
 ---
 Opal wrapper for [Phoenix Framework](http://phoenixframework.org/) javascript library.
+
+Github: https://github.com/fazibear/opal-phoenix
 
 - ![](https://badge.fury.io/rb/opal-phoenix.svg)
 - ![](https://img.shields.io/github/stars/fazibear/opal-phoenix.svg)
