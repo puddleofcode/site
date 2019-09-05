@@ -2,6 +2,7 @@
 section: project
 date: 2015-09-03
 title: airbrakex
+slug: airbrakex
 url: https://github.com/fazibear/airbrakex
 image: ../images/projects/elixirpackage.png
 author: Michał Kalbarczyk

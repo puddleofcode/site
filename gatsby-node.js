@@ -54,6 +54,19 @@ exports.createPages = ({ graphql, actions }) => {
         pathPrefix: `/projects`,
         component: path.resolve(`src/pagination/projects.js`),
       })
+      edges.forEach(({ node }, index) => {
+        createPage({
+          path: node.fields.slug,
+          component: path.resolve(`src/sections/project.js`),
+          context: {
+            slug: node.fields.slug,
+            navigation: {
+              prev: index === 0 ? null : { title: edges[index - 1].node.frontmatter.title, slug: edges[index - 1].node.fields.slug },
+              next: index === edges.length - 1 ? null : { title: edges[index + 1].node.frontmatter.title, slug: edges[index + 1].node.fields.slug },
+            }
+          }
+        })
+      })
     },
     'story': (edges) => {
       paginate({

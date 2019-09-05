@@ -2,6 +2,7 @@
 section: project
 date: 2015-06-31
 title: Sprint Poker
+slug: sprint-poker
 url: https://sprintpoker.io
 image: ../images/projects/sprintpoker.png
 author: Michał Kalbarczyk

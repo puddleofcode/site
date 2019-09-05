@@ -2,6 +2,7 @@
 section: project
 date: 2017-12-08
 title: fazic
+slug: fazic
 url: https://fazic.fazibear.me
 image: ../images/projects/fazic.png
 author: Michał Kalbarczyk
