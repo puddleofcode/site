@@ -17,7 +17,6 @@ export default ({ title, excerpt, author, date, url, image, author_image, tags, 
             <div className="wrapthumbnail">
               <Link to={url}>
                 <Image
-                  fadeIn={false}
                   Tag="span"
                   className="thumbnail d-block"
                   fluid={image.childImageSharp.fluid}
