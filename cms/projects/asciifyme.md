@@ -7,8 +7,8 @@ image: ../images/projects/asciifyme.png
 author: Michał Kalbarczyk
 author_image: ../images/authors/michal.png
 ---
-Funny app that turns your face into ascii art!
+Funny app that turns your face into ascii art! Build with [Inesita](https://github.com/inesita-rb/inesita).
 
-[Try now!](https://asciifyme.fazibear.me/)
-
-Written with [Inesita](https://github.com/inesita-rb/inesita)
+Links:
+- https://asciifyme.fazibear.me/
+- https://github.com/fazibear/asciify-me

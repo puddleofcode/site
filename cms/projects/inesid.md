@@ -10,6 +10,6 @@ author_image: ../images/authors/michal.png
 
 Open source Retro Web SID Player
 
-https://inesid.fazibear.me
-
-[https://github.com/fazibear/inesid](https://github.com/fazibear/inesid)
+Related links:
+- https://inesid.fazibear.me
+- https://github.com/fazibear/inesid
