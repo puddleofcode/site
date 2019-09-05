@@ -18,6 +18,7 @@ export default ({ title, excerpt, author, date, url, image, author_image, tags, 
               <Link to={url}>
                 <Image
                   Tag="span"
+                  
                   className="thumbnail d-block"
                   fluid={image.childImageSharp.fluid}
                 />
