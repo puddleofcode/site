@@ -1,7 +1,7 @@
 ---
 date: 2019-09-07
 slug: how-to-create-desktop-application-with-elixir
-title: How to Create Desktop Application with Elixir?
+title: How to Create Desktop Application with Elixir
 tags:
   - elixir
   - phoenix
