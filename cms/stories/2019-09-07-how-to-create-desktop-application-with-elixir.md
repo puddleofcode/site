@@ -15,12 +15,9 @@ author: Michał Kalbarczyk
 author_image: ../images/authors/michal.png
 
 ---
-Writing desktop application was not an easy task until Electron. What is Electron?
 
-> Electron is a framework for creating native applications with web technologies
-> like JavaScript, HTML, and CSS.
-
-Can we archive such a thing with Elixir? Let's figure it out.
+Writing desktop application is not an easy task. But why don't use Elixir, Phoenix and LiveView?
+We will figure out how we can create a desktop application using those technologies.
 
 ## Phoenix Framework
 
