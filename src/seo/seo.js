@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql, StaticQuery } from 'gatsby'
 import Twitter from './twitter'
-import Facebook from './facebook'
+import OpenGraph from './opengraph'
 import SchemaOrg from './schemaorg'
 
 export const query = graphql`
@@ -68,7 +68,7 @@ export default ({
                 <link rel="canonical" href={seo.url} />
                 <link rel="alternate" hreflang="en" href={seo.url} />
               </Helmet>
-              <Facebook
+              <OpenGraph
                 url={seo.url}
                 type={article ? `article` : `website`}
                 title={seo.title}
