@@ -16,7 +16,7 @@ When following error brakes your compilation to asmjs/wasm:
 Just update emstcripten, and install upstream compiler.
 
 ```bash
-# emsdk install latest-upstream
-# emsdk activate latest-upstream
+$ emsdk install latest-upstream
+$ emsdk activate latest-upstream
 ```
 
