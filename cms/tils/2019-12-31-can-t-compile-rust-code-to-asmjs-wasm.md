@@ -9,8 +9,8 @@ author_image: ../images/authors/michal.png
 
 When following error brakes your compilation to asmjs/wasm:
 
-```
- = note: shared:ERROR: fastcomp is not compatible with wasm object
+```bash
+ = note: shared:ERROR: fastcomp is not compatible with wasm object ...
 ```
 
 Just update emstcripten, and install upstream compiler.
