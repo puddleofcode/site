@@ -28,9 +28,12 @@ tags:
 ---
 ### Senior Elixir Embedded System Engineer
 
-  - Design and build the pluggable system architecture
-  - Implement various serial communication protocols
-  - Build custom CI environment based on Docker
-  - Build custom Linux system and deployment recipes
-  - Build custom firmware image for target machine
-  - Build embeddable webview and window management
+Slot Gaming Machine firmware developemnt.
+
+  - Designing and building pluggable architecture in Elixir
+  - Implementing various serial communication protocols
+  - Building custom build environment based on Docker and Jenkins
+  - Building custom linux system for Nerves
+  - Building custom firmware image for target machine
+  - Building embeddable chromium browser based on QT5
+
