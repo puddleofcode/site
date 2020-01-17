@@ -79,7 +79,7 @@ const render = (data) => (
             <Row>
               <Col md={12}>
                 <p>
-                  With 14 years of overall commercial programming experience, I gained extensive and practical knowledge of designing, programming, maintaining and optimising sophisticated services.
+                  With 14 years of overall commercial programming experience, I gained extensive and practical knowledge of designing, programming, maintaining and optimizing sophisticated services.
                 </p>
                 <p>
                   Interested in many modern technologies like Elixir, Phoenix, Nerves, Ruby, Ruby On Rails, Sinatra, JavaScript, React, GraphQL, JSON, AMQP, SQL, NoSQL, MRuby, RubyMotion, iOS, Chef, Linux, Arduino, RaspberryPi and more.

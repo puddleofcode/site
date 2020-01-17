@@ -26,7 +26,7 @@ tags:
 
 Backend application development for cable television STB
 
-  - Developing and maintaining soap api for STB
-  - Developing and maintaining soap json for STB
+  - Developing and maintaining SOAP API for STB
+  - Developing and maintaining SOAP JSON for STB
   - Backend optimization
   - Designing new backend architecture
