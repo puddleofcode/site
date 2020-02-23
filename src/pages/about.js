@@ -83,7 +83,7 @@ const render = (data) => (
                 </p>
                 <p>
                   With 15 years of overall commercial programming experience, I ained extensive and practical knowledge of designing, programming, maintaining and optimising sophisticated services. 
-                  Interested in many new modern technologies and programming languages. Music enthusiasts. Sour beer gourmet.
+                  Interested in many modern technologies and programming languages. Music enthusiasts. Sour beer gourmet.
                 </p>
               </Col>
             </Row>
