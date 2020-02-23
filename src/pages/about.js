@@ -79,9 +79,6 @@ const render = (data) => (
             <Row>
               <Col md={12}>
                 <p>
-                  With 14 years of overall commercial programming experience, I gained extensive and practical knowledge of designing, programming, maintaining and optimizing sophisticated services.
-                </p>
-                <p>
                   With 15 years of overall commercial programming experience, I gained extensive and practical knowledge of designing, programming, maintaining and optimizing sophisticated services. 
                   Interested in many modern technologies and programming languages. Fascinated about hardware. Excited about retro computers. Attracted in every kind of music. Keen about sour beers.                
                 </p>
