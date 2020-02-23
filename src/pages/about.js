@@ -82,7 +82,8 @@ const render = (data) => (
                   With 14 years of overall commercial programming experience, I gained extensive and practical knowledge of designing, programming, maintaining and optimizing sophisticated services.
                 </p>
                 <p>
-                  Interested in many modern technologies like Elixir, Phoenix, Nerves, Ruby, Ruby On Rails, Sinatra, JavaScript, React, GraphQL, JSON, AMQP, SQL, NoSQL, MRuby, RubyMotion, iOS, Chef, Linux, Arduino, RaspberryPi and more.
+                  With 15 years of overall commercial programming experience, I ained extensive and practical knowledge of designing, programming, maintaining and optimising sophisticated services. 
+                  Interested in many new modern technologies and programming languages. Music enthusiasts. Sour beer gourmet.
                 </p>
               </Col>
             </Row>
