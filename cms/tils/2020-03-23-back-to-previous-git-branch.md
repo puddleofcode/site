@@ -6,7 +6,7 @@ title: Back to previous git branch
 author: Michał Kalbarczyk
 author_image: ../images/authors/michal.png
 ---
-Right after dealing master you can easily back to your branch with:
+Right after dealing with master you can easily back to your previous branch with:
 
 ```bash
 $ git checkout master
