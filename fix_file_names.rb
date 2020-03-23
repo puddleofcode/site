@@ -56,6 +56,6 @@ Dir.glob('cms/**/*.md') {|file_name|
 }
 
 to_rename.each do |move|
-  puts "Ranaming #{move[:from]} to #{move[:to]}..."
+  puts "Ranaming #{move[:from]} to #{move[:to]} ..."
   FileUtils.mv(move[:from], move[:to])
 end
