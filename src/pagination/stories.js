@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row } from 'react-bootstrap';
+import { Row } from 'react-bootstrap'
 
 import { graphql } from 'gatsby'
 
@@ -10,12 +10,13 @@ import Story from '../components/story'
 import Pagination from '../components/pagination'
 
 export const query = graphql`
-  query ($skip: Int!, $limit: Int!) {
+  query($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {section: {eq: "story"}}}
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { section: { eq: "story" } } }
       skip: $skip
       limit: $limit
-    ){
+    ) {
       edges {
         node {
           id
@@ -33,17 +34,17 @@ export const query = graphql`
             author
             tags
             author_image {
-              childImageSharp{
-                  fixed(width: 40) {
-                      ...GatsbyImageSharpFixed_noBase64
-                  }
+              childImageSharp {
+                fixed(width: 40) {
+                  ...GatsbyImageSharpFixed_noBase64
+                }
               }
             }
             image {
-              childImageSharp{
-                  fluid(maxWidth: 476) {
-                      ...GatsbyImageSharpFluid_noBase64
-                  }
+              childImageSharp {
+                fluid(maxWidth: 476) {
+                  ...GatsbyImageSharpFluid_noBase64
+                }
               }
             }
           }
@@ -55,11 +56,7 @@ export const query = graphql`
 
 export default ({ data, pageContext }) => (
   <Layout>
-    <SEO
-      article={false}
-      title={`Stories`}
-      keywords={`stories`}
-    />
+    <SEO article={false} title={`Stories`} keywords={`stories`} />
     <section className="posts">
       <Header title="List of Stories" />
       <Row className="listrecent">

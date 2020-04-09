@@ -10,14 +10,13 @@ import Story from '../components/story'
 import Heading from '../components/heading'
 import Til from '../components/til'
 
-
 export const query = graphql`
   query {
     stories: allMarkdownRemark(
       limit: 6
-      sort: { order: DESC, fields: [frontmatter___date]}
-      filter: {frontmatter: {section: {eq: "story"}}}
-    ){
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { section: { eq: "story" } } }
+    ) {
       edges {
         node {
           id
@@ -35,17 +34,17 @@ export const query = graphql`
             tags
             author
             author_image {
-              childImageSharp{
-                  fixed(width: 40) {
-                      ...GatsbyImageSharpFixed_noBase64
-                  }
+              childImageSharp {
+                fixed(width: 40) {
+                  ...GatsbyImageSharpFixed_noBase64
+                }
               }
             }
             image {
-              childImageSharp{
-                  fluid(maxWidth: 476) {
-                      ...GatsbyImageSharpFluid_noBase64
-                  }
+              childImageSharp {
+                fluid(maxWidth: 476) {
+                  ...GatsbyImageSharpFluid_noBase64
+                }
               }
             }
           }
@@ -54,9 +53,9 @@ export const query = graphql`
     }
     projects: allMarkdownRemark(
       limit: 2
-      sort: { order: DESC, fields: [frontmatter___date]}
-      filter: {frontmatter: {section: {eq: "project"}}}
-    ){
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { section: { eq: "project" } } }
+    ) {
       edges {
         node {
           id
@@ -73,17 +72,17 @@ export const query = graphql`
             tags
             author
             author_image {
-              childImageSharp{
-                  fixed(width: 40) {
-                      ...GatsbyImageSharpFixed_noBase64
-                  }
+              childImageSharp {
+                fixed(width: 40) {
+                  ...GatsbyImageSharpFixed_noBase64
+                }
               }
             }
             image {
-              childImageSharp{
-                  fluid(maxWidth: 508) {
-                      ...GatsbyImageSharpFluid_noBase64
-                  }
+              childImageSharp {
+                fluid(maxWidth: 508) {
+                  ...GatsbyImageSharpFluid_noBase64
+                }
               }
             }
           }
@@ -92,9 +91,9 @@ export const query = graphql`
     }
     til: allMarkdownRemark(
       limit: 1
-      sort: { order: DESC, fields: [frontmatter___date]}
-      filter: {frontmatter: {section: {eq: "til"}}}
-    ){
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { section: { eq: "til" } } }
+    ) {
       edges {
         node {
           fields {
@@ -107,10 +106,10 @@ export const query = graphql`
             date(formatString: "DD MMMM YYYY")
             author
             author_image {
-              childImageSharp{
-                  fixed(width: 45) {
-                      ...GatsbyImageSharpFixed_noBase64
-                  }
+              childImageSharp {
+                fixed(width: 45) {
+                  ...GatsbyImageSharpFixed_noBase64
+                }
               }
             }
           }
@@ -148,7 +147,11 @@ export default ({ data }) => (
       </Row>
     </section>
     <section className="featured-posts">
-      <Header title="Recent Projects" link="More Projects &raquo;" url="/projects" />
+      <Header
+        title="Recent Projects"
+        link="More Projects &raquo;"
+        url="/projects"
+      />
       <Row>
         {data.projects.edges.map(({ node }) => (
           <Project
@@ -169,7 +172,14 @@ export default ({ data }) => (
     <section className="til-list">
       <Header title="Last Learned" link="More &raquo;" url="/tils" />
       {data.til.edges.map(({ node }) => (
-        <Til key={node.id} title={node.frontmatter.title} html={node.html} author={node.frontmatter.author} author_image={node.frontmatter.author_image} url={node.fields.slug}/>
+        <Til
+          key={node.id}
+          title={node.frontmatter.title}
+          html={node.html}
+          author={node.frontmatter.author}
+          author_image={node.frontmatter.author_image}
+          url={node.fields.slug}
+        />
       ))}
     </section>
   </Layout>

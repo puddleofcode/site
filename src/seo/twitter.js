@@ -1,7 +1,13 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
-export default ({ type = 'summary_large_image', username = null, title, description, image }) => (
+export default ({
+  type = 'summary_large_image',
+  username = null,
+  title,
+  description,
+  image,
+}) => (
   <Helmet>
     {username && <meta name="twitter:creator" content={username} />}
     <meta name="twitter:card" content={type} />

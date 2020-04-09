@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { FaFacebook, FaTwitter, FaLinkedin, FaReddit } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaLinkedin, FaReddit } from 'react-icons/fa'
 import { graphql, StaticQuery } from 'gatsby'
 import { CommentCount } from 'gatsby-plugin-disqus'
 
@@ -9,7 +9,7 @@ import {
   LinkedinShareButton,
   TwitterShareButton,
   RedditShareButton,
-} from 'react-share';
+} from 'react-share'
 
 export const query = graphql`
   query {
@@ -22,13 +22,10 @@ export const query = graphql`
 `
 var render = ({ title, url, tags }) => (
   <div className="share">
-    <p>
-      Share
-      </p>
+    <p>Share</p>
     <ul>
       <li className="ml-1 mr-1">
-        <FacebookShareButton
-          url={url}>
+        <FacebookShareButton url={url}>
           <FaFacebook size={30} />
         </FacebookShareButton>
       </li>
@@ -43,18 +40,12 @@ var render = ({ title, url, tags }) => (
         </TwitterShareButton>
       </li>
       <li className="ml-1 mr-1">
-        <LinkedinShareButton
-          url={url}
-          title={title}
-        >
+        <LinkedinShareButton url={url} title={title}>
           <FaLinkedin size={30} />
         </LinkedinShareButton>
       </li>
       <li className="ml-1 mr-1">
-        <RedditShareButton
-          url={url}
-          title={title}
-        >
+        <RedditShareButton url={url} title={title}>
           <FaReddit size={30} />
         </RedditShareButton>
       </li>
@@ -62,12 +53,17 @@ var render = ({ title, url, tags }) => (
     <div className="sep" />
     <ul>
       <li>
-        <CommentCount config={{url: url}} placeholder={`0 Comments`} />
+        <CommentCount config={{ url: url }} placeholder={`0 Comments`} />
       </li>
     </ul>
   </div>
 )
 
 export default ({ title, url, tags }) => (
-  <StaticQuery query={query} render={(query) => render({ title, url: `${query.site.siteMetadata.siteUrl}${url}`, tags })} />
+  <StaticQuery
+    query={query}
+    render={(query) =>
+      render({ title, url: `${query.site.siteMetadata.siteUrl}${url}`, tags })
+    }
+  />
 )

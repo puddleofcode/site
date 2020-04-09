@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from 'react-bootstrap';
+import { Container } from 'react-bootstrap'
 
 import Navigation from './navigation'
 import Footer from './footer'
@@ -14,7 +14,7 @@ class Layout extends React.Component {
         elements[i].classList.add('line-numbers')
       }
     }
-    Prism.highlightAll();
+    Prism.highlightAll()
   }
   render() {
     return (
@@ -22,9 +22,7 @@ class Layout extends React.Component {
         <Navigation />
         <div className="site-content">
           <Container>
-            <div className="main-content">
-              {this.props.children}
-            </div>
+            <div className="main-content">{this.props.children}</div>
           </Container>
         </div>
         <Footer />

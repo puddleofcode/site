@@ -18,7 +18,7 @@ export const query = graphql`
         facebookAppID
       }
     }
-    logo: file(relativePath: {eq: "logo.png"}) {
+    logo: file(relativePath: { eq: "logo.png" }) {
       publicURL
     }
   }
@@ -30,73 +30,74 @@ export default ({
   article = false,
   date = null,
   author = null,
-  url = null
+  url = null,
 }) => (
-    <StaticQuery
-      query={query}
-      render={
-        ({
-          site: {
-            siteMetadata: {
-              defaultTitle,
-              defaultAuthor,
-              titleTemplate,
-              defaultDescription,
-              siteUrl,
-              twitterUsername,
-              facebookAppID,
-            },
-          },
-          logo: {
-            publicURL
-          }
-        }) => {
-          const seo = {
-            title: title || defaultTitle,
-            author: author || defaultAuthor,
-            description: description || defaultDescription,
-            image: `${siteUrl}${image || publicURL}`,
-            url: `${siteUrl}${url || '/'}`,
-          };
+  <StaticQuery
+    query={query}
+    render={({
+      site: {
+        siteMetadata: {
+          defaultTitle,
+          defaultAuthor,
+          titleTemplate,
+          defaultDescription,
+          siteUrl,
+          twitterUsername,
+          facebookAppID,
+        },
+      },
+      logo: { publicURL },
+    }) => {
+      const seo = {
+        title: title || defaultTitle,
+        author: author || defaultAuthor,
+        description: description || defaultDescription,
+        image: `${siteUrl}${image || publicURL}`,
+        url: `${siteUrl}${url || '/'}`,
+      }
 
-          return (
-            <>
-              <Helmet title={seo.title} titleTemplate={titleTemplate} htmlAttributes={{ lang: `en` }}>
-                <meta name="author" content={seo.author} />
-                <meta name="description" content={seo.description} />
-                <meta name="image" content={seo.image} />
-                <link rel="canonical" href={seo.url} />
-                <link rel="alternate" hreflang="en" href={seo.url} />
-              </Helmet>
-              <OpenGraph
-                url={seo.url}
-                type={article ? `article` : `website`}
-                title={seo.title}
-                description={seo.description}
-                image={seo.image}
-                appID={facebookAppID}
-                name={defaultTitle}
-              />
-              <Twitter
-                username={twitterUsername}
-                title={seo.title}
-                description={seo.description}
-                image={seo.image}
-              />
-              <SchemaOrg
-                isBlogPost={article}
-                url={seo.url}
-                title={seo.title}
-                image={seo.image}
-                description={seo.description}
-                datePublished={date}
-                canonicalUrl={seo.url}
-                author={seo.author}
-                organization={{}}
-                defaultTitle={seo.title}
-              />
-            </>
-          );
-        }}
-    />
-  );
+      return (
+        <>
+          <Helmet
+            title={seo.title}
+            titleTemplate={titleTemplate}
+            htmlAttributes={{ lang: `en` }}
+          >
+            <meta name="author" content={seo.author} />
+            <meta name="description" content={seo.description} />
+            <meta name="image" content={seo.image} />
+            <link rel="canonical" href={seo.url} />
+            <link rel="alternate" hreflang="en" href={seo.url} />
+          </Helmet>
+          <OpenGraph
+            url={seo.url}
+            type={article ? `article` : `website`}
+            title={seo.title}
+            description={seo.description}
+            image={seo.image}
+            appID={facebookAppID}
+            name={defaultTitle}
+          />
+          <Twitter
+            username={twitterUsername}
+            title={seo.title}
+            description={seo.description}
+            image={seo.image}
+          />
+          <SchemaOrg
+            isBlogPost={article}
+            url={seo.url}
+            title={seo.title}
+            image={seo.image}
+            description={seo.description}
+            datePublished={date}
+            canonicalUrl={seo.url}
+            author={seo.author}
+            organization={{}}
+            defaultTitle={seo.title}
+          />
+        </>
+      )
+    }}
+  />
+)

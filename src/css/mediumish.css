@@ -5,16 +5,24 @@
   License: https://www.wowthemes.net/freebies-license/
 */
 
-:root {
-  --border: #fff;
+body {
+  --text: #343a40;
   --accent: #006bab;
   --background: #fff;
+  --code: #212529;
+}
+
+body.dark {
+  --text: #cbc5bf;
+  --accent: #006bab;
+  --background: #000;
   --code: #212529;
 }
 
 body {
   font-family: 'Fira Sans', sans-serif;
   background-color: var(--background);
+  color: var(--text);
 }
 
 pre {
@@ -23,8 +31,34 @@ pre {
   margin: 0 10px 2em 10px !important;
 }
 
+#theme-toggler {
+  display: none;
+}
+
+#theme-toggler + label {
+  margin-bottom: 0;
+  display: block;
+  padding: .5rem 0;
+}
+
+#theme-toggler + label:before {
+  content: "🌚";
+}
+
+#theme-toggler:checked + label:before {
+  content: "🌞";
+}
+
 code {
   color: var(--code);
+}
+
+.card {
+  background-color: var(--background);
+}
+
+.card-footer {
+  background-color: inherit;
 }
 
 .mainheading {
@@ -867,7 +901,6 @@ iframe {
 }
 .main-timeline .icon:before {
   width: 15px;
-  background: --border;
   top: -1px;
 }
 .main-timeline .icon span:after,
