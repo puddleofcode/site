@@ -5,7 +5,7 @@ import Link from './link'
 export default ({ url, title, excerpt }) => (
   <>
     <Card.Title as="h3">
-      <Link className="text-dark" to={url}>
+      <Link to={url}>
         {title}
       </Link>
     </Card.Title>

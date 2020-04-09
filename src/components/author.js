@@ -14,7 +14,7 @@ export default ({ author, author_image, date, url, info }) => (
       />
     </span>
     <span className="author-meta">
-      <Link to="/about" className="link-dark">
+      <Link to="/about">
         {author}
       </Link>
       <br />

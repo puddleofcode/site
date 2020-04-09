@@ -86,7 +86,7 @@ export default ({ data, pageContext }) => (
                 lg={10}
                 className="col-xs-12 text-center text-md-left"
               >
-                <Link to="/about" className="link-dark">
+                <Link to="/about">
                   {data.markdownRemark.frontmatter.author}
                 </Link>
                 <p>
