@@ -14,9 +14,7 @@ export default ({ author, author_image, date, url, info }) => (
       />
     </span>
     <span className="author-meta">
-      <Link to="/about">
-        {author}
-      </Link>
+      <Link to="/about">{author}</Link>
       <br />
       {date && <span className="post-date">{date} </span>}
       {date && info && <span className="post-date">&nbsp;-&nbsp;</span>}

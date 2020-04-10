@@ -6,33 +6,31 @@
 */
 
 body {
-  --fore: #343a40;
-  --back: #ffffff;
-  --accent: #006bab;
   --code: #212529;
-  
+  --accent: #006bab; 
   --link-hover: #035282;
   
-  --mid1: rgba(0, 0, 0, 0.050); 
-  --mid2: rgba(0, 0, 0, 0.200);
-  --mid3: rgba(0, 0, 0, 0.500);
-  --mid4: rgba(0, 0, 0, 0.600);
-  --mid5: rgba(0, 0, 0, 0.950); 
+  --back: rgba(255, 255, 255, 1); 
+  --mid1: rgba(52, 58, 64, 0.050); 
+  --mid2: rgba(52, 58, 64, 0.200);
+  --mid3: rgba(52, 58, 64, 0.500);
+  --mid4: rgba(52, 58, 64, 0.600);
+  --mid5: rgba(52, 58, 64, 0.950); 
+  --fore: rgba(52, 58, 64, 1.000); 
 }
 
 body.dark {
-  --fore: #cbc5bf;
   --accent: #006bab;
-  --back: #000;
   --code: #212529;
-  
   --link-hover: #035282;
   
-  --mid1: rgba(255, 255, 255, 0.050); 
-  --mid2: rgba(255, 255, 255, 0.200);
-  --mid3: rgba(255, 255, 255, 0.500);
-  --mid4: rgba(255, 255, 255, 0.600);
-  --mid5: rgba(255, 255, 255, 0.950); 
+  --back: rgba(0, 0, 0); 
+  --mid1: rgba(203, 197, 191, 0.050); 
+  --mid2: rgba(203, 197, 191, 0.200);
+  --mid3: rgba(203, 197, 191, 0.500);
+  --mid4: rgba(203, 197, 191, 0.600);
+  --mid5: rgba(203, 197, 191, 0.950); 
+  --fore: rgba(203, 197, 191, 1.000); 
 }
 
 body {
@@ -63,6 +61,18 @@ pre {
 
 #theme-toggler:checked + label:before {
   content: "🌞";
+}
+
+.nav-link.active {
+  color: var(--fore) !important;
+}
+
+.nav-link {
+  color: var(--mid3) !important;
+}
+
+.nav-link:hover {
+  color: var(--mid4) !important;
 }
 
 code {

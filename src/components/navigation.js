@@ -42,13 +42,15 @@ export default () => (
           <ThemeToggler>
             {({ theme, toggleTheme }) => (
               <>
-              <input
+                <input
                   type="checkbox"
                   id="theme-toggler"
-                  onChange={(e) => toggleTheme(e.target.checked ? 'dark' : 'light')}
+                  onChange={(e) =>
+                    toggleTheme(e.target.checked ? 'dark' : 'light')
+                  }
                   checked={theme === 'dark'}
                 />
-              <label for="theme-toggler"/>
+                <label for="theme-toggler" />
               </>
             )}
           </ThemeToggler>
