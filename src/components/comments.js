@@ -5,31 +5,31 @@ import React, { Component } from 'react'
 
 class Comments extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       comments: [],
-    };
+    }
   }
 
   componentDidMount() {
     fetch(`/comments${this.props.slug}.json`)
-      .then(response => response.json())
-      .then(comments => this.setState({ comments }));
+      .then((response) => response.json())
+      .then((comments) => this.setState({ comments }))
   }
 
   render() {
     return (
       <ul>
-        {this.state.comments.map(comment =>
+        {this.state.comments.map((comment) => (
           <li key={comment.id}>
             <span>{comment.author}</span>
             <p>{comment.description}</p>
           </li>
-        )}
+        ))}
       </ul>
-    );
+    )
   }
 }
 
-export default Comments;
+export default Comments

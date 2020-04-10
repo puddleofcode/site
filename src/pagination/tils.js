@@ -9,12 +9,13 @@ import Pagination from '../components/pagination'
 import Til from '../components/til'
 
 export const query = graphql`
-  query ($skip: Int!, $limit: Int!) {
+  query($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {section: {eq: "til"}}}
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { section: { eq: "til" } } }
       skip: $skip
       limit: $limit
-    ){
+    ) {
       edges {
         node {
           fields {
@@ -27,10 +28,10 @@ export const query = graphql`
             date(formatString: "DD MMMM YYYY")
             author
             author_image {
-              childImageSharp{
-                  fixed(width: 45) {
-                      ...GatsbyImageSharpFixed_noBase64
-                  }
+              childImageSharp {
+                fixed(width: 45) {
+                  ...GatsbyImageSharpFixed_noBase64
+                }
               }
             }
           }
@@ -50,7 +51,14 @@ export default ({ data, pageContext }) => (
     <Header title="Today I Learned" />
     <section className="til-list">
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <Til key={node.id} title={node.frontmatter.title} html={node.html} author={node.frontmatter.author} author_image={node.frontmatter.author_image} url={node.fields.slug} />
+        <Til
+          key={node.id}
+          title={node.frontmatter.title}
+          html={node.html}
+          author={node.frontmatter.author}
+          author_image={node.frontmatter.author_image}
+          url={node.fields.slug}
+        />
       ))}
     </section>
     <Pagination prefix="tils" pageContext={pageContext} />

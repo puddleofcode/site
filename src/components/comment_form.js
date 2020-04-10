@@ -10,18 +10,9 @@ export default ({ title, slug }) => (
       method="POST"
       action="https://dev.staticman.net/v3/entry/github/fazibear/puddleofcode.com/master/comments"
     >
-      <input
-        name="options[slug]"
-        type="hidden"
-        value={slug}
-      />
+      <input name="options[slug]" type="hidden" value={slug} />
       <input name="fields[name]" type="text" placeholder="Name" required />
-      <input
-        name="fields[email]"
-        type="email"
-        placeholder="Email"
-        required
-      />
+      <input name="fields[email]" type="email" placeholder="Email" required />
       <textarea name="fields[message]" placeholder="Comment" required />
       <button type="submit">Submit Comment</button>
     </form>

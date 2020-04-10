@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap'
 
 export default () => (
   <footer className="footer">
@@ -9,7 +9,14 @@ export default () => (
           All content © Michał Kalbarczyk
         </Col>
         <Col md={6} sm={6} className="text-center text-lg-right">
-          theme based on <a target="_blank" rel="noopener noreferrer" href="https://www.wowthemes.net">mediumish theme</a>
+          theme based on{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.wowthemes.net"
+          >
+            mediumish theme
+          </a>
         </Col>
       </Row>
     </Container>

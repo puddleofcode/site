@@ -12,11 +12,17 @@ export const query = graphql`
     }
   }
 `
-var render = (config) => (
-  <Disqus config={config} />
-)
+var render = (config) => <Disqus config={config} />
 
 export default ({ identifier, title, url }) => (
-  <StaticQuery query={query} render={(query) => render({ identifier, title, url: `${query.site.siteMetadata.siteUrl}${url}` })} />
+  <StaticQuery
+    query={query}
+    render={(query) =>
+      render({
+        identifier,
+        title,
+        url: `${query.site.siteMetadata.siteUrl}${url}`,
+      })
+    }
+  />
 )
-

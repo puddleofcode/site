@@ -2,7 +2,7 @@ import React from 'react'
 //import BackgroundImage Image rom 'gatsby-background-image'
 import Image from 'gatsby-image'
 //import { Link } from 'gatsby'
-import { graphql } from "gatsby"
+import { graphql } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Link } from 'gatsby'
 
@@ -15,9 +15,7 @@ import Disqus from '../components/disqus'
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(
-      fields: { slug: { eq: $slug } }
-    ) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       excerpt(pruneLength: 100, format: PLAIN, truncate: false)
       frontmatter {
@@ -29,10 +27,10 @@ export const query = graphql`
         author
         tags
         author_image {
-          childImageSharp{
-              fixed(width: 88) {
-                ...GatsbyImageSharpFixed_noBase64
-              }
+          childImageSharp {
+            fixed(width: 88) {
+              ...GatsbyImageSharpFixed_noBase64
+            }
           }
         }
       }
@@ -68,18 +66,38 @@ export default ({ data, pageContext }) => (
         <Col md={9} flex="first" flex-md="unordered">
           <div className="mainheading">
             <Row className="post-top-meta">
-              <Col md={3} lg={2} className="col-xs-12 text-center text-md-left mb-4 mb-md-0">
-                <Image fadeIn={false} className="author-thumb" fixed={data.markdownRemark.frontmatter.author_image.childImageSharp.fixed} title={data.markdownRemark.frontmatter.author} />
+              <Col
+                md={3}
+                lg={2}
+                className="col-xs-12 text-center text-md-left mb-4 mb-md-0"
+              >
+                <Image
+                  fadeIn={false}
+                  className="author-thumb"
+                  fixed={
+                    data.markdownRemark.frontmatter.author_image.childImageSharp
+                      .fixed
+                  }
+                  title={data.markdownRemark.frontmatter.author}
+                />
               </Col>
-              <Col md={9} lg={10} className="col-xs-12 text-center text-md-left">
-                <Link to="/about" className="link-dark">
+              <Col
+                md={9}
+                lg={10}
+                className="col-xs-12 text-center text-md-left"
+              >
+                <Link to="/about">
                   {data.markdownRemark.frontmatter.author}
                 </Link>
                 <p>
                   <small>
                     <span className="post-date">
-                      <time className="post-date" dateTime={data.markdownRemark.frontmatter.rawDate}>
-                        {data.markdownRemark.frontmatter.date} - {data.markdownRemark.fields.readingTime.text}
+                      <time
+                        className="post-date"
+                        dateTime={data.markdownRemark.frontmatter.rawDate}
+                      >
+                        {data.markdownRemark.frontmatter.date} -{' '}
+                        {data.markdownRemark.fields.readingTime.text}
                       </time>
                     </span>
                   </small>
@@ -91,10 +109,17 @@ export default ({ data, pageContext }) => (
               {data.markdownRemark.frontmatter.title}
             </h1>
           </div>
-          <div className="article-post" dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+          <div
+            className="article-post"
+            dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+          />
           <hr />
           <PrevNext navigation={pageContext.navigation} />
-          <Disqus url={data.markdownRemark.fields.slug} identifier={data.markdownRemark.id} title={data.markdownRemark.frontmatter.title} />      
+          <Disqus
+            url={data.markdownRemark.fields.slug}
+            identifier={data.markdownRemark.id}
+            title={data.markdownRemark.frontmatter.title}
+          />
         </Col>
       </Row>
     </Container>

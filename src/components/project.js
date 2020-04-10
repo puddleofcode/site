@@ -1,14 +1,24 @@
 import React from 'react'
-import { CardGroup, Card, Row, Col } from 'react-bootstrap';
+import { CardGroup, Card, Row, Col } from 'react-bootstrap'
 //import BackgroundImage Image rom 'gatsby-background-image'
 import Image from 'gatsby-image'
 import Link from './link'
 
 import Author from './author'
 import Excerpt from './excerpt'
-import Tags from './tags';
+import Tags from './tags'
 
-export default ({ title, excerpt, author, date, url, image, author_image, tags, read }) => (
+export default ({
+  title,
+  excerpt,
+  author,
+  date,
+  url,
+  image,
+  author_image,
+  tags,
+  read,
+}) => (
   <Col md={6} className="mb-30px">
     <div className="listfeaturedtag h-100">
       <Row className="h-100">
@@ -31,9 +41,15 @@ export default ({ title, excerpt, author, date, url, image, author_image, tags, 
               <Card.Body>
                 <Excerpt url={url} title={title} excerpt={excerpt} />
               </Card.Body>
-              <Card.Footer className="b-0 bg-white mt-auto">
+              <Card.Footer className="b-0 mt-auto">
                 <Tags tags={tags} />
-                <Author author={author} author_image={author_image} date={date} url={url} info={read} />
+                <Author
+                  author={author}
+                  author_image={author_image}
+                  date={date}
+                  url={url}
+                  info={read}
+                />
               </Card.Footer>
             </Card>
           </CardGroup>

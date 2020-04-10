@@ -5,9 +5,7 @@ export default ({ tags }) => (
   <ul className="tags mb-4">
     {(tags || []).map((tag) => (
       <li key={tag}>
-        <Link>
-          {tag}
-        </Link>
+        <Link>{tag}</Link>
       </li>
     ))}
   </ul>
