@@ -65,9 +65,10 @@ const render = (data) => (
           <Col md={4}>
             <div className="sticky-top sticky-top-80 text-center">
               <Image
+                className="me"
                 fadeIn={false}
                 fixed={data.placeholderImage.childImageSharp.fixed}
-                title="Puddle Of Code"
+                title="Michał"
                 backgroundColor={`#fff`}
               />
               <h2>Michał Kalbarczyk</h2>

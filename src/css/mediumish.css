@@ -63,6 +63,15 @@ pre {
   content: '🌞';
 }
 
+.me {
+  border: 1px solid var(--accent);
+  border-radius: 1rem;
+}
+
+.dark .navbar-brand {
+  filter: invert(100);
+}
+
 .nav-link.active {
   color: var(--fore) !important;
 }
@@ -116,7 +125,7 @@ a:hover {
 
 .mediumnavigation {
   background: var(--back) !important;
-  box-shadow: 0 2px 2px -2px var(--mid2);
+  box-shadow: 0 2px 2px -2px var(--mid4);
   /* transition: top 0.2s ease-in-out; */
 }
 .main-content {
@@ -312,9 +321,6 @@ span.post-read-more a:hover {
   background: transparent;
   color: var(--accent);
 }
-.mediumnavigation .navbar-brand {
-  font-weight: 500;
-}
 .mediumnavigation .dropdown-menu {
   border: 1px solid var(--mid2);
   margin: 0.5rem 0 0;
@@ -330,6 +336,7 @@ span.post-read-more a:hover {
   cursor: pointer;
 }
 .mediumnavigation .navbar-brand {
+  font-weight: 500;
   padding-bottom: 0;
 }
 .mediumnavigation .navbar-brand img {
