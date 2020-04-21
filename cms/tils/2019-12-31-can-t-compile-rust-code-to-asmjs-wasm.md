@@ -2,7 +2,7 @@
 section: til
 date: 2019-12-31
 slug: can-t-compile-rust-code-to-asmjs-wasm
-title: Can't compile Rust code to asmjs/wasm
+title: Can't Compile Rust Code to asmjs/wasm
 author: Michał Kalbarczyk
 author_image: ../images/authors/michal.png
 ---
