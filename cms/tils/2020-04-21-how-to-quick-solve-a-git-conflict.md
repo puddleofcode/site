@@ -9,15 +9,15 @@ author_image: ../images/authors/michal.png
 When you are in the conflct state simply type:
 
 ```sh
-git checkout --ours .
-git add .
+# git checkout --ours .
+# git add .
 ```
 
 to keep all your changes, or:
 
 ```sh
-git checkout --theirs .
-git add .
+# git checkout --theirs .
+# git add .
 ```
 
 to do the opposite.
